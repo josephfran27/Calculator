@@ -2,28 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    /* color pallet */
-    background: #F5B316;
-    background: radial-gradient(circle, rgba(245, 179, 22, 1) 10%, rgba(82, 82, 82, 1) 100%);
+    background: #6495ED;
+    background: radial-gradient(circle, rgb(80, 118, 188) 60%, rgba(82, 82, 82, 1) 100%);
     font-family: 'Quantico', sans-serif;
 }
 
 .header {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 50px;
     color: white;
 }
 
+/* main calculator box/container */
 .calculatorBox {
     background-color: #646363;
     margin: 40px auto; 
     width: 400px;
     height: 600px;
-    padding-top: 50px;
+    padding-top: 10px;
     border: solid 4px #3e3d3d;
 }
 
+/* results view */
 .resultsBox {
     background-color: #adacac;
     margin: 0 auto;
@@ -40,6 +41,7 @@ body {
     color: white;
 }
 
+/* buttons (grid) */
 .calcBtns {
     padding: 40px 20px;
     display: grid;
@@ -61,15 +63,17 @@ body {
     font-size: 25px;
 }
 
+/* clear button */
 .clear {
     grid-column: 3;
-    background-color: #f5b316;
+    background-color: #6495ED;
 }
 
 .clear:hover {
-    background-color: #b68410;
+    background-color: #4d74bc;
 }
 
+/* delete button */
 .delete {
     grid-column: 4;
     background-color: #7a7777;
@@ -79,6 +83,7 @@ body {
     background-color: #525252;
 }
 
+/* number buttons */
 .number {
     background-color: #c2c0c0;
 }
@@ -87,6 +92,7 @@ body {
     background-color: #918f8f;
 }
 
+/* operator buttons */
 .operator {
     background-color: #7a7777;
 }
@@ -95,6 +101,7 @@ body {
     background-color: #525252;
 }
 
+/* equals button */
 .equals {
     background-color: #7a7777;
 }
@@ -103,11 +110,10 @@ body {
     background-color: #525252;
 }
 
-/* FOOTER */
+/* footer */
 .footer {
     text-align: center;
     color: #F9FAF8;
     font-size: 15px;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
